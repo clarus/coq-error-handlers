@@ -1,15 +1,15 @@
-# ![Logo](https://raw.githubusercontent.com/clarus/icons/master/castle-48.png) Error Handlers *beta*
+# ![Logo](https://raw.githubusercontent.com/clarus/icons/master/castle-48.png) Error Handlers
 Simple. Robust. Ubiquitous.
 
 ## Install
 ### With OPAM
-Add the Coq unstable repository:
+Add the Coq repository:
 
-    opam repo add coq-unstable https://github.com/coq/repo-unstable.git
+    opam repo add coq-released https://coq.inria.fr/opam/released
 
 and run:
 
-    opam install coq:error-handlers
+    opam install -j4 coq:error-handlers
 
 ### From the sources
 Do a classic:
