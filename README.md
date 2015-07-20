@@ -24,5 +24,8 @@ Add:
     Require Import ErrorHandlers.All.
 
 at the beginning of your source files. It will import the following functions:
-* `Option.bind : forall {A B : Type}, option A -> (A -> option B) -> option B`
-* `Sum.bind : forall {E A B : Type}, A + E -> (A -> B + E) -> B + E`
+
+* `Option.bind : forall {A B}, option A -> (A -> option B) -> option B`
+* `Option.map : forall {A B}, option A -> (A -> B) -> option B`
+* `Sum.bind : forall {E A B}, A + E -> (A -> B + E) -> B + E`
+* `Sum.map : forall {E A B}, A + E -> (A -> B) -> B + E`
