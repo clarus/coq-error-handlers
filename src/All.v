@@ -10,6 +10,12 @@ Module Option.
     | Some x => Some (f x)
     | None => None
     end.
+
+  Definition default {A} (x : option A) (d : A) : A :=
+    match x with
+    | Some x => x
+    | None => d
+    end.
 End Option.
 
 Module Sum.
@@ -23,5 +29,11 @@ Module Sum.
     match x with
     | inl x => inl (f x)
     | inr e => inr e
+    end.
+
+  Definition default {E A} (x : A + E) (d : A) : A :=
+    match x with
+    | inl x => x
+    | inr _ => d
     end.
 End Sum.
