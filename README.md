@@ -28,7 +28,6 @@ at the beginning of your source files. It will import the following functions:
 * `Option.bind : forall {A B}, option A -> (A -> option B) -> option B`
 * `Option.map : forall {A B}, option A -> (A -> B) -> option B`
 * `Option.default : forall {A}, option A -> A -> A`
-
 * `Sum.bind : forall {E A B}, A + E -> (A -> B + E) -> B + E`
 * `Sum.map : forall {E A B}, A + E -> (A -> B) -> B + E`
 * `Sum.default : forall {E A}, A + E -> A -> A`
