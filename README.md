@@ -3,7 +3,7 @@ Simple. Robust. Ubiquitous.
 
 ## Install
 ### With OPAM
-Add the Coq repository:
+Add the [Coq repository](http://coq.io/opam/):
 
     opam repo add coq-released https://coq.inria.fr/opam/released
 
