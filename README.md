@@ -9,7 +9,7 @@ Add the [Coq repository](http://coq.io/opam/):
 
 and run:
 
-    opam install -j4 coq:error-handlers
+    opam install -j4 coq-error-handlers
 
 ### From the sources
 Do a classic:
